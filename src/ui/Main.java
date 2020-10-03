@@ -35,10 +35,19 @@ public class Main {
 
     //Interface
     Scanner in = new Scanner(System.in);
-    Operations.clrsc();
+    Stream.clrsc();
     System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
-    System.out.println("(Any key + ENTER to continue...)");
-    in.next();
-    Operations.clrsc();
+    System.out.println("Capacidad maxima de piscina \'" + pPool1.getPoolName() + "\': ");
+    Stream.printPoolCapacity(pPool1,in);
+
+    System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
+    System.out.println("Capacidad maxima de piscina \'" + pPool2.getPoolName() + "\': ");
+    Stream.printPoolCapacity(pPool2,in);
+
+    System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
+    System.out.println("Capacidad maxima de piscina \'" + pPool3.getPoolName() + "\': ");
+    Stream.printPoolCapacity(pPool3,in);
+
+    Stream.continueM(in);
   }
 }

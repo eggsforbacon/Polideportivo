@@ -46,7 +46,7 @@ public class Club {
       spotsLeft = MAX_CAPACITY - clubUsers;
     }
     else {
-      temp = (MAX_CAPACITY * (1 - 0.75)) - clubUsers;
+      temp = (MAX_CAPACITY * (1 - 0.65)) - clubUsers;
       spotsLeft = (int)temp;
     }
     return spotsLeft;

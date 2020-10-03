@@ -41,12 +41,12 @@ public class Pool {
     pplInThePool[1] = (int)area; //Capacidad máxima téorica realista
     if (area >= cap) {
       pplInThePool[2] = cap; //Capacidad máxima en condiciones normales
-      temp = cap * (1 - 0.75);
+      temp = cap * (1 - 0.65);
       pplInThePool[3] = (int)temp; //Capacidad máxima en pandemia
     }
     else {
       pplInThePool[2] = (int)area;
-      temp = area * (1 - 0.75);
+      temp = area * (1 - 0.65);
       pplInThePool[3] = (int)temp;
     }
 
