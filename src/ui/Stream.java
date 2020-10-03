@@ -17,14 +17,14 @@ public class Stream {
   public static void printPoolCapacity(Pool iPool, Scanner in) {
     int[] pplInThePool = iPool.calculateMaxOcupation();
     System.out.println("La maxima teorica es: " + pplInThePool[0]);
-    System.out.println("La maxima teorica realista es: " + pplInThePool[1]);
+    System.out.println("La maxima teorica realista es: " + pplInThePool[1] + "\n");
     System.out.println("La maxima normal es: " + pplInThePool[2]);
-    System.out.println("La maxima en pandemia es: " + pplInThePool[3]);
-    continueM(in);
+    System.out.println("La maxima en pandemia es: " + pplInThePool[3] + "\n");
+    continueM(in,"continue");
   }
 
-  public static void continueM(Scanner in) {
-    System.out.println("(Any key + ENTER to continue...)");
+  public static void continueM(Scanner in, String word) {
+    System.out.println("(Any key + ENTER to " + word + "...)");
     in.next();
     clrsc();
   }

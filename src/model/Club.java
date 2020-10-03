@@ -36,6 +36,16 @@ public class Club {
   public int totalClubUsers() {
     int clubUsers = 0;
     clubUsers = zone1.calculateUsers();
+    clubUsers += zone2.calculateUsers();
+
+    clubUsers += court1.getNumUsers();
+    clubUsers += court2.getNumUsers();
+    clubUsers += court3.getNumUsers();
+
+    clubUsers += pool1.getNumUsers();
+    clubUsers += pool2.getNumUsers();
+    clubUsers += pool3.getNumUsers();
+
     return clubUsers;
   }
 

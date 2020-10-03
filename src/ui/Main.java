@@ -37,17 +37,23 @@ public class Main {
     Scanner in = new Scanner(System.in);
     Stream.clrsc();
     System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
-    System.out.println("Capacidad maxima de piscina \'" + pPool1.getPoolName() + "\': ");
+    System.out.println("Capacidad maxima de piscina \'" + pPool1.getPoolName() + "\':\n");
     Stream.printPoolCapacity(pPool1,in);
 
     System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
-    System.out.println("Capacidad maxima de piscina \'" + pPool2.getPoolName() + "\': ");
+    System.out.println("Capacidad maxima de piscina \'" + pPool2.getPoolName() + "\':\n");
     Stream.printPoolCapacity(pPool2,in);
 
     System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
-    System.out.println("Capacidad maxima de piscina \'" + pPool3.getPoolName() + "\': ");
+    System.out.println("Capacidad maxima de piscina \'" + pPool3.getPoolName() + "\':\n");
     Stream.printPoolCapacity(pPool3,in);
 
-    Stream.continueM(in);
+    System.out.println("Hay " + club1.totalClubUsers() + " usuarios en el club. (" + Operations.calcPerc(70,club1.totalClubUsers()) + ")\n");
+    int spLeft = club1.availableSpots(true,club1.totalClubUsers());
+    System.out.println(Operations.calcPerc(70,spLeft) + " de los cupos libres (" + spLeft + " cupos).");
+    Stream.continueM(in,"continue");
+
+    System.out.println(Operations.checkForOverflow(spLeft));
+    Stream.continueM(in,"exit");
   }
 }
