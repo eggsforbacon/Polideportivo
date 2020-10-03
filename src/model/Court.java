@@ -16,4 +16,12 @@ public class Court {
   public int getNumUsers() {
     return numUsers;
   }
+
+  public String getCourtName() {
+    return courtName;
+  }
+
+  public String getSport() {
+    return sport;
+  }
 }

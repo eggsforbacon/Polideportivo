@@ -18,4 +18,8 @@ public class Table {
   public String getIdentifier() {
     return identifier;
   }
+
+  public int getMaxSeats() {
+    return maxSeats;
+  }
 }

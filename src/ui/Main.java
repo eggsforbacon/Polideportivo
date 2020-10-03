@@ -1,5 +1,6 @@
 package ui;
 import model.*;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args) {
@@ -23,5 +24,21 @@ public class Main {
     model.Court cCourt1 = new Court("Girasoles","Tenis",23.77,8.23,6);
     model.Court cCourt2 = new Court("Margaritas","Futbol",90,45,15);
     model.Court cCourt3 = new Court("Hortensias","Voleibol",18,9,12);
+
+    //Pools
+    model.Pool pPool1 = new Pool("Delfines",30,20,1.5,13);
+    model.Pool pPool2 = new Pool("Castores",9,8,0.5,8);
+    model.Pool pPool3 = new Pool("Manaties",50,25,2.5,30);
+
+    //Club
+    model.Club club1 = new Club("Unidad Recreativa Caniaveralejo","Carrera 62 Esquina, Calle 6A",pZone1,pZone2,cCourt1,cCourt2,cCourt3,pPool1,pPool2,pPool3);
+
+    //Interface
+    Scanner in = new Scanner(System.in);
+    Operations.clrsc();
+    System.out.println("Polideportivo \'" + club1.getClubName() + "\'.\n" + club1.getAdress() + ".");
+    System.out.println("(Any key + ENTER to continue...)");
+    in.next();
+    Operations.clrsc();
   }
 }
