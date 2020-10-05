@@ -5,14 +5,18 @@ public class Table {
   private int maxSeats;
   private int numUsers;
 
-  public Table(String identifier, int maxSeats, int numUsers) {
+  public Table(String identifier, int maxSeats) {
     this.identifier = identifier;
     this.maxSeats = maxSeats;
-    this.numUsers = numUsers;
+    numUsers = 0;
   }
 
   public int getNumUsers() {
     return numUsers;
+  }
+
+  public void setNumUsers(int numUsers) {
+    this.numUsers = numUsers;
   }
 
   public String getIdentifier() {

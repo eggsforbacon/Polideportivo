@@ -5,16 +5,20 @@ public class Court {
   private double courtLength, width;
   private int numUsers;
 
-  public Court(String courtName, String sport, double courtLength, double width, int numUsers) {
+  public Court(String courtName, String sport, double courtLength, double width) {
     this.courtName = courtName;
     this.sport = sport;
     this.courtLength = courtLength;
     this.width = width;
-    this.numUsers = numUsers;
+    numUsers = 0;
   }
 
   public int getNumUsers() {
     return numUsers;
+  }
+
+  public void setNumUsers(int numUsers) {
+    this.numUsers = numUsers;
   }
 
   public String getCourtName() {

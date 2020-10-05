@@ -5,16 +5,16 @@ import java.util.*;
 public class Main {
   public static void main(String[] args) {
     //Tables for the first picnic zone
-    model.Table table1_1 = new Table("Mesa 1",6,4);
-    model.Table table1_2 = new Table("Mesa 2",6,4);
-    model.Table table1_3 = new Table("Mesa 3",6,0);
-    model.Table table1_4 = new Table("Mesa 4",6,0);
+    model.Table table1_1 = new Table("Mesa 1",6);
+    model.Table table1_2 = new Table("Mesa 2",6);
+    model.Table table1_3 = new Table("Mesa 3",6);
+    model.Table table1_4 = new Table("Mesa 4",6);
 
-    //Tables fot the second picnic zone
-    model.Table table2_1 = new Table("Mesa 1",10,7);
-    model.Table table2_2 = new Table("Mesa 2",10,0);
-    model.Table table2_3 = new Table("Mesa 3",10,0);
-    model.Table table2_4 = new Table("Mesa 4",10,0);
+    //Tables for the second picnic zone
+    model.Table table2_1 = new Table("Mesa 1",10);
+    model.Table table2_2 = new Table("Mesa 2",10);
+    model.Table table2_3 = new Table("Mesa 3",10);
+    model.Table table2_4 = new Table("Mesa 4",10);
 
     //Picnic zones
     model.PicnicZone pZone1 = new PicnicZone("Los Sauces",table1_1,table1_2,table1_3,table1_4);
